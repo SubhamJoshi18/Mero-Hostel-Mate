@@ -1,7 +1,8 @@
 import { useEffect } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Features from "../components/features/Features";
 
 export default function HomePage() {
   useEffect(() => {
@@ -21,9 +22,7 @@ export default function HomePage() {
         {/* Mero Hostel Mate */}
         <img className="h-14" src="/assets/mhmlogo.png" alt="logo" />
       </div>
-      <Link to={"/about"}>
-        <button>GO TO ABOUT PAGE</button>
-      </Link>
+      <Features/>
     </>
   );
 }
