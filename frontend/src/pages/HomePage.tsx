@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -13,17 +12,11 @@ export default function HomePage() {
   }, []);
   return (
     <>
-      <div
-        data-aos="fade-up"
-        className="container mx-auto px-12 text-xl text-black font-bold "
-        style={{ fontFamily: "Pacifico" }}
-      >
-        {/* Mero Hostel Mate */}
-        <img className="h-14" src="/assets/mhmlogo.png" alt="logo" />
+      <div className="bg-center bg-cover bg-no-repeat">
+        <div className="absolute top-0 -z-10">
+          <img src="/assets/7.webp" alt="background" />
+        </div>
       </div>
-      <Link to={"/about"}>
-        <button>GO TO ABOUT PAGE</button>
-      </Link>
     </>
   );
 }
